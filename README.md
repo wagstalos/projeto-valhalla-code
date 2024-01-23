@@ -1,7 +1,8 @@
 
-# Projeto Backlgrs
+# Projeto Valhalla Digital
 
-Bem-vindo ao projeto Backlgrs! Este projeto é uma aplicação que utiliza SASS para estilos avançados, JavaScript para interatividade e algumas bibliotecas úteis para aprimorar a experiência do usuário.
+Desbravamos o território digital
+Com a força dos vikings transformando cliques em conquistas e transformando desejos em carruagens virtuais. A saga da sua presença online começa conosco.
 
 
 ## libs
@@ -19,8 +20,4 @@ Documentação do Swiper -  https://swiperjs.com/
 
 AOS (aos.min.js) - https://github.com/michalsnik/aos
 AOS (Animate On Scroll) é uma biblioteca de animação que adiciona animações elegantes aos elementos quando eles entram no campo de visão durante o scroll.
-
-Repositório do AOS no GitHub
-MicroModal (micromodal.min.js) https://github.com/Ghosh/micromodal
-MicroModal é uma biblioteca leve para criar modais simples e fáceis de usar em seus projetos.
 
