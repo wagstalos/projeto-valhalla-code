@@ -125,29 +125,6 @@
         }
     }
 
-    &__logos {
-        display: flex;
-
-        &-techs {
-            border: 1px solid #323131;
-            padding: 0 30px;
-            margin: 20px;
-            webkit-backdrop-filter: blur(7.8px);
-            backdrop-filter: blur(7.8px);
-            background: linear-gradient(121deg, rgba(255, 255, 255, 0.14) -12.02%, rgba(255, 255, 255, 0.01) 87.55%);
-            block-size: 100%;
-
-            img {
-                filter: grayscale(1);
-                transition: all 0.3s;
-
-                &:hover {
-                    filter: grayscale(0);
-                }
-            }
-        }
-    }
-
     @include responsive($table-bk) {
         &__description {
             font-size: 1.8rem;
@@ -185,6 +162,7 @@
 
     @include responsive($mobile-bk) {
         padding: 10px;
+        padding-top: 9.9rem;
     }
 }
 

@@ -6,7 +6,7 @@
   "name": "https://www.valhalladigital.com.br/",
   "orientation": "any",
   "scope": "index.html",
-  "short_name": "Backlgrs",
+  "short_name": "Valhalla Digital",
   "start_url": "index.html",
   "theme_color": "#fff",
   "categories": [],
@@ -51,7 +51,7 @@
   ],
   "shortcuts": [
     {
-      "name": "Backlgrs",
+      "name": "Valhalla digital",
       "url": "",
       "description": ""
     }
