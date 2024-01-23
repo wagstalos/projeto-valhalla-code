@@ -1,0 +1,57 @@
+/*** section sobre nós ***/
+.s-about {
+    padding-top: 4.9rem;
+    padding-bottom: 4.9rem;
+    // background-color: $black-dark;
+
+    &-title,
+    h2 {
+        @include sub-title($white);
+        text-align: center;
+    }
+
+    h3 {
+        color: $white;
+        font-size: 2.4rem;
+        margin-bottom: $gutter * 2;
+    }
+
+    p {
+        color: #dddedf;
+    }
+
+    &-text {
+        width: 50%;
+        border: 1px solid #323131;
+        padding: 20px;
+        border-radius: 12px;
+        webkit-backdrop-filter: blur(7.8px);
+        backdrop-filter: blur(7.8px);
+        background: linear-gradient(121deg, rgb(255 255 255 / 14%) -12.02%, rgba(255, 255, 255, 0.01) 87.55%);
+        block-size: 100%;
+    }
+
+    .container {
+        @include flex(row, center, space-between);
+    }
+
+    @include responsive(800px) {
+        .container {
+            @include flex(column, center, space-between);
+        }
+        &-text {
+            width: 100%;
+            h3 {
+                text-align: center;
+            }
+
+            img {
+                margin: 0 auto;
+                display: block;
+            }
+        }
+    }
+
+    @include responsive($mobile-bk) {
+    }
+}

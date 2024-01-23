@@ -1,0 +1,164 @@
+/*** section contato ***/
+.s-contact {
+    padding-top: 14.9rem;
+    padding-bottom: 6.9rem;
+    position: relative;
+    // background-color: $white;
+    z-index: 1;
+
+    &-title {
+        // @include sub-title($gray-01);
+        font-size: 22px;
+        color: $white;
+        margin-bottom: 2rem;
+    }
+
+    &-description {
+        max-width: 85%;
+        color: $white;
+        opacity: 0.8;
+    }
+
+    .container {
+        @include flex(row-reverse, center, space-between);
+    }
+
+    .col-1 {
+        width: 45%;
+        margin: 0 auto;
+
+        .s-contact-image {
+            position: relative;
+        }
+
+        .img-1 {
+            position: absolute;
+            max-width: 150px;
+            top: 80px;
+            right: 40px;
+        }
+
+        .img-2 {
+            position: absolute;
+            max-width: 250px;
+            bottom: 30px;
+            right: 15px;
+        }
+
+        .img-3 {
+            position: absolute;
+            max-width: 250px;
+            bottom: 50px;
+            left: 0;
+        }
+    }
+
+    .col-2 {
+        width: 50%;
+        padding: $gutter * 2;
+
+        form {
+            width: 100%;
+            margin-top: $gutter * 4;
+
+            .d-flex {
+                justify-content: space-between;
+            }
+
+            label {
+                font-size: 1.4rem;
+                font-weight: 700;
+                width: 48%;
+                margin-top: $gutter * 2;
+                color: $blue-light;
+
+                input,
+                textarea {
+                    width: 100%;
+                    // border-radius: 10.377px;
+                    border: 0.649px solid rgba(24, 25, 69, 0.2);
+                    background: $white;
+                    padding: 11px;
+                    margin-top: $gutter * 2;
+
+                    &:focus {
+                        border: 1px solid $blue-light;
+                    }
+                }
+            }
+        }
+
+        .btn {
+            margin-top: $gutter * 3;
+        }
+    }
+
+    //responsive
+    @include responsive($table-bk) {
+        &-description {
+            margin-top: $gutter;
+            max-width: 100%;
+        }
+        .container {
+            @include flex(column, center, space-between);
+            text-align: center;
+
+            h2 {
+                font-size: 2.8rem;
+                margin: 0;
+            }
+        }
+
+        .col-1 {
+            width: 100%;
+
+            .img-1 {
+                position: absolute;
+                max-width: 120px;
+                top: 0px;
+                right: 20px;
+            }
+
+            .img-2 {
+                position: absolute;
+                max-width: 200px;
+                bottom: 10px;
+                right: 15px;
+            }
+
+            .img-3 {
+                position: absolute;
+                max-width: 150px;
+                bottom: 50px;
+                left: 0;
+            }
+        }
+
+        .col-2 {
+            width: 100%;
+            margin-top: $gutter * 2;
+
+            form {
+                text-align: start;
+                .d-flex {
+                    flex-direction: column;
+                }
+
+                label {
+                    width: 100%;
+                }
+            }
+
+            .btn {
+                width: 100%;
+                line-height: 5.4rem;
+                margin: 0 auto;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: $gutter * 3;
+            }
+        }
+    }
+}

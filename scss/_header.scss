@@ -1,0 +1,206 @@
+header {
+    position: relative;
+    top: 10px;
+    left: 0;
+    width: 80%;
+    height: 5.9rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 2;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 80px;
+    z-index: 11;
+
+    .container {
+        @include flex(row, center, space-between);
+    }
+
+    .logotipo {
+        font-family: "Arkhip", sans-serif;
+        color: $white;
+        font-size: 3rem;
+        margin: 0 26px;
+    }
+
+    .logotipo-mb {
+        font-family: "Arkhip", sans-serif;
+        color: $white;
+        font-size: 3rem;
+        margin: 0 26px;
+        display: none;
+    }
+    nav {
+        ul {
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            margin-right: 80px;
+
+            li {
+                &:not(:first-child) {
+                    margin-left: 2.6rem;
+                }
+
+                &:last-child {
+                    border-radius: 80px;
+                }
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    font-size: 1.6rem;
+                    margin-left: 0.6rem;
+                    line-height: 1.9rem;
+                    color: $white;
+
+                    span {
+                        font-size: 1.6rem;
+                        margin-left: 0.6rem;
+                        line-height: 1.9rem;
+                        font-weight: 500;
+                        color: #e0e0e0;
+                        transition: color 0.2s;
+
+                        &:hover {
+                            color: $blue-light;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .dots {
+        color: $white;
+        background-color: $purple;
+        padding: $gutter;
+        border-radius: $border-radius * 10;
+        margin-right: $gutter;
+        display: none;
+        position: fixed;
+        .icons-dots {
+            display: none;
+        }
+    }
+
+    @include responsive(800px) {
+        .container {
+            justify-content: center;
+        }
+        nav {
+            display: none;
+        }
+        .logotipo-mb {
+            position: absolute;
+            top: 0;
+            display: block;
+        }
+
+        .dots {
+            color: $white;
+            display: block;
+            position: absolute;
+            // bottom: 22px;
+            padding: 8px;
+            right: 0;
+            .icons-dots {
+                display: block;
+            }
+        }
+    }
+
+    @include responsive($mobile-bk) {
+        // height: 100vh;
+
+        .container {
+            @include flex(row, center, center);
+        }
+
+        .logotipo {
+            margin: 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-family: $font-main;
+            font-family: "Arkhip", sans-serif;
+        }
+
+        .dots {
+            color: $white;
+            display: block;
+            position: fixed;
+            bottom: 22px;
+            padding: 16px;
+            right: 0;
+            .icons-dots {
+                display: block;
+            }
+        }
+    }
+}
+
+.menu-mobile {
+    background: $white;
+    border-radius: $border-radius * 2;
+    width: 100%;
+    height: 50vh;
+    position: fixed;
+    bottom: 0;
+    z-index: 12;
+    display: none;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 50vh;
+        background-color: #000000b5;
+        position: absolute;
+        top: -100%;
+    }
+
+    &__icons {
+        position: absolute;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        svg {
+            width: 24px;
+            margin: 8px;
+        }
+    }
+
+    .icon-tabler-x {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+    }
+
+    ul {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-55%);
+
+        li {
+            text-align: center;
+            font-size: 1.6rem;
+            margin: 24px 0;
+            font-weight: 700;
+            a {
+                color: $black;
+            }
+        }
+    }
+}
+
+.show {
+    display: block;
+}

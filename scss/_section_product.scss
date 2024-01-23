@@ -1,0 +1,114 @@
+/*** section nossos serviços ***/
+.s-product {
+    padding-top: 6.9rem;
+    padding-bottom: 1.9rem;
+    background-color: $blue-dark;
+    position: relative;
+    height: 636px;
+
+    &-title {
+        @include sub-title($white);
+        position: relative;
+        z-index: 2;
+    }
+
+    &-subtitle {
+        color: $main-color;
+        position: relative;
+        z-index: 2;
+        font-size: 1.4rem;
+    }
+
+    &__description {
+        margin-bottom: 3rem;
+        max-width: 60%;
+        position: relative;
+    }
+
+    &::after {
+        content: "";
+        background: url(../img/bg-banner.png) no-repeat;
+        background-size: cover;
+        width: 60%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 769px;
+        pointer-events: none;
+        opacity: 0.4;
+        z-index: 1;
+    }
+
+    .container {
+        @include flex(row, center, space-around);
+        border-radius: $border-radius;
+        padding: 5rem 0;
+
+        p {
+            color: $white;
+        }
+
+        .col-2 {
+            width: 100%;
+
+            .image {
+                position: absolute;
+                top: 0;
+                right: 0;
+                pointer-events: none;
+                height: auto;
+                opacity: 0.34;
+                filter: hue-rotate(303deg);
+            }
+
+            .card {
+                width: 47%;
+                background-color: rgba(0, 24, 22, 0.56);
+                border-radius: $border-radius * 2;
+                padding: $gutter * 2;
+                height: 190px;
+                z-index: 2;
+
+                h4 {
+                    color: $main-color;
+                    font-weight: 700;
+                    font-size: 1.8rem;
+                    margin-bottom: $gutter * 2;
+                    text-align: start;
+                }
+
+                p {
+                    color: $white;
+                    text-align: start;
+                }
+            }
+        }
+    }
+
+    @include responsive($table-bk) {
+        .s-product__description {
+            font-weight: 400;
+            max-width: 91%;
+            margin: 0 auto;
+            margin-bottom: $gutter * 3;
+        }
+        .container {
+            @include flex(column, flex-start, space-between);
+            text-align: center;
+
+            .col-2 {
+                width: 100%;
+                margin-top: 40px;
+
+                .image {
+                    opacity: 0.84;
+                    filter: none;
+                }
+
+                .mySwiper {
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}

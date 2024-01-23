@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Cache-Control" content="max-age=3600, public">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#6264eb" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+  <link rel="stylesheet" href="./css/lib/swiper.min.css">
+  <link rel="stylesheet" href="./css/main.min.css?version=4" />
+  <link rel="stylesheet" href="./css/lib/aos.min.css">
+
+  <!-- <link rel="icon" href="./favicon.jpg" sizes="32x32"> -->
+  <link rel="manifest" href="./manifest.json">
+
+  <title>Valhalla Digital</title>
+  <meta name="title" content="Valhalla Digital ">
+  <meta name="description" content="" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://valhalladigital.com.br/" />
+  <meta property="og:title" content="valhalladigital" />
+  <meta name="description" content="" />
+  <meta property="og:image" content="./img/preview.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://valhalladigital.com.br/" />
+  <meta property="twitter:title" content="valhalladigital" />
+  <meta property="twitter:description" content="" />
+  <meta property="twitter:image" content="./img/preview.jpg" />
+
+
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+  <script>
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(function (OneSignal) {
+      OneSignal.init({
+        appId: "9a3f6f09-8928-4082-80ed-8c1dd1f5291e",
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+
+    <div class="container">
+      <a href="#hero" class="logo" id="logo">
+        <!-- <img src="img/logo-branco.png" alt="logotipo" width="150" height="40"> -->
+        <p class="logotipo">Valhalla Digital </p>
+      </a>
+      <nav>
+        <ul>
+          <li class="hide-mb">
+            <a href="#quem-somos">
+              <span data-i18n="quem_somos">Quem somos</span>
+            </a>
+          </li>
+
+          <li class="hide-mb">
+            <a href="#atuacao">
+              <span data-i18n="atuacao">Atuação</span>
+            </a>
+          </li>
+
+          <li class="hide-mb">
+            <a href="#projetos">
+              <span data-i18n="servicos">Projetos</span>
+            </a>
+          </li>
+
+
+          <li class="hide-mb">
+            <a href="#contato" data-i18n="contato" class="btn btn-outline">
+              Contato
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- <p class="logotipo-mb">Valhalla Digital </p> -->
+    </div>
+
+    <!-- <select id="selectLanguage" aria-label="Language">
+      <option value="pt-br">BR</option>
+      <option value="en">EN</option>
+      <option value="es">ES</option>
+    </select> -->
+
+
+    <!-- mobile menu -->
+    <div class="dots">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-category-2" width="24" height="24"
+        viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M14 4h6v6h-6z" />
+        <path d="M4 14h6v6h-6z" />
+        <path d="M17 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+        <path d="M7 7m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+      </svg>
+    </div>
+  </header>
+
+  <div class="menu-mobile">
+    <div class="bg-dark"></div>
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24"
+      stroke-width="2" stroke="#453f51" fill="none" stroke-linecap="round" stroke-linejoin="round" fill="#453f51">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M18 6l-12 12"></path>
+      <path d="M6 6l12 12"></path>
+    </svg>
+
+    <ul class="menu-mobile__links">
+      <li>
+        <a href="#quem-somos">
+          <span data-i18n="quem_somos">Quem somos</span>
+        </a>
+      </li>
+      <li>
+        <a href="#atuacao">
+          <span data-i18n="atuacao">Atuação</span>
+        </a>
+      </li>
+      <li>
+        <a href="#projetos">
+          <span data-i18n="servicos">Projetos</span>
+        </a>
+      </li>
+
+      <!-- <li>
+        <a href="#carreira">
+          <span data-i18n="carreira">Carreira</span>
+        </a>
+      </li> -->
+
+      <li class="btn-contrast">
+        <a href="#contato">
+          <span data-i18n="contato">Contato</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="menu-mobile__icons">
+      <a href="" target="_blank" aria-label="instagram da Valhalla Digital">
+        <svg aria-hidden="true" class="e-font-icon-svg" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+            fill="#6264eb ">
+          </path>
+        </svg></a>
+      <a href="" target="_blank" aria-label="linkedin da Valhalla Digital">
+        <svg aria-hidden="true" class="e-font-icon-svg" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+            fill="#6264eb ">
+          </path>
+        </svg></a>
+    </div>
+
+  </div>
+
+  <main>
+
+    <section class="s-hero" id="hero">
+      <div id="particles-js"></div>
+      <div class="container">
+        <div class="s-hero-text">
+          <div data-aos="fade-right" data-aos-duration="1000">
+            <!-- 
+            <h2>
+              <img src="img/Fire.svg" alt="icon help" />
+              <span>Bem-vindo à Valhalla Digital</span>
+            </h2> -->
+
+            <!-- <h3 style="color: aliceblue;"> Bem-vindo à</h3> -->
+            <h1 class="s-hero-title" data-aos="fade-right" data-aos-duration="1000" data-i18n="hero_title">
+              Desbravamos o <span>território digital</span> </h1>
+
+            <p class="s-hero-text__description" data-i18n="hero_description">
+              Com a força dos vikings transformando cliques em conquistas e
+              transformando desejos em carruagens virtuais. A saga da sua presença online começa conosco.
+            </p>
+
+            <!-- <a href="https://api.whatsapp.com/send?l=pt_BR&phone=5511969533781" target="_blank" class="button-49">
+              <span data-i18n="hero_button">Comece um projeto</span>
+            </a> -->
+
+            <button class="button-49" role="button">Comece um projeto</button>
+
+            <!-- <div class="s-hero-text__know">
+              <span data-i18n="hero_partners">Conheça nossos projetos:</span>
+            </div> -->
+
+            <div class="s-hero-text__partners">
+              <ul style="color: white; font-size: 18px;">
+                <li> <span>+10</span> <br> Projetos
+                  SFCC</li>
+                <li> <span>+30 </span> <br> Landing
+                  pages</li>
+                <li> <span>+20</span> <br>
+                  E-commerce</li>
+              </ul>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- <div class="s-hero-selo" data-aos="fade-up" data-aos-duration="2000">
+          <img src="img/selo.svg" alt="selo hero" width="100%" height="auto" class="rotate">
+          <img src="img/b-logo.svg" alt="selo hero" width="45px" height="auto" style="position: absolute;">
+        </div> -->
+
+        <div class="s-hero-image" data-aos="fade-down" data-aos-duration="1000">
+          <img src="img/hero.jpg" alt="ilustração vikings codando" width="100%" height="auto" />
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="s-about" id="quem-somos">
+
+      <h2 class="d-center">Quem somos</h2>
+
+      <div class="container">
+        <div class="s-about-text">
+          <img src="img/icon-king.png" alt="" width="70px">
+          <h3>Somos uma equipe de jovens destemidos</h3>
+          <p>
+            Somos uma equipe de jovens cujas jornadas digitais se entrelaçaram em projetos ousados, tanto em terras
+            brasileiras quanto além-mar. Cada membro carrega consigo a bagagem da exploração incansável dos caminhos do
+            ciberespaço, esculpindo o panorama online com doses generosas de criatividade e inovação.
+
+            Nossas habilidades são forjadas nas diversas batalhas do mundo digital, onde enfrentamos desafios em uma
+            variedade de projetos, abrangendo não apenas o Brasil, mas também os horizontes globais.
+          </p>
+
+
+        </div>
+
+        <div class="s-about-img">
+          <p>
+            <img src="img/about-img.png" alt="imagem com vikings no barco e códigos">
+          </p>
+
+        </div>
+      </div>
+
+
+
+    </section>
+
+    <section class="s-resources" id="atuacao">
+      <h2 class="d-center">Atuação</h2>
+
+      <h3 class="s-resources__description">Seja para dar vida a uma nova marca, expandir sua <strong>presença
+          digital</strong> ou
+        impulsionar suas <strong>vendas online</strong> , a
+        Valhalla Digital está aqui para transformar suas aspirações em realidade.</h3>
+
+
+      <ul class="s-resources__skills">
+
+        <li>
+          <img src="img/iconsite.png" alt="" width="90px">
+          <h5>
+            Landing Pages Persuasivas</h5>
+          <p>Transformamos visitantes em clientes com landing pages envolventes, destacando seus produtos ou serviços
+            para capturar leads e incentivar ações.</p>
+        </li>
+
+        <li>
+          <img src="img/iconblog.png" alt="" width="70px">
+          <h5>
+            Blogs Dinâmicos</h5>
+          <p>Conteúdo é crucial online. Criamos blogs que informam e engajam, com layouts intuitivos, design
+            responsivo e SEO otimizado, tornando-se uma fonte confiável para seu público.</p>
+        </li>
+
+        <li>
+          <img src="img/iconcart.png" alt="" width="70px">
+          <h5>
+            E-commerces de Alto Desempenho</h5>
+          <p>Maximize suas vendas online com e-commerces visualmente atraentes e funcionais. De navegação fácil a
+            checkout seguro, nossas soluções são projetadas para uma experiência de compra sem atritos.</p>
+        </li>
+
+      </ul>
+
+
+
+
+      <div class="d-center mb-40">
+        <h3 class="s-resources__projects-title" id="projetos">Projetos</h3>
+        <p class="color-light">Confira alguns dos nossos projetos!</p>
+      </div>
+
+
+      <div class="s-resources__projects">
+        <div class="card">
+          <img src="https://wpsgames.com.br/img/capa-descomplix-inteligencia.jpg" alt="">
+
+          <div class="card-description">
+            <h3>Website</h3>
+
+            <div>
+              <h4><strong>DescompliX <br> UI/UX - frontend</strong></h4>
+              <a href="https://inteligencia.descomplix.com/">Ver projeto <svg stroke="currentColor" fill="none"
+                  stroke-width="1.5" viewBox="0 0 15 15" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+                    fill="currentColor"></path>
+                </svg> </a>
+            </div>
+
+          </div>
+
+          <a href="https://inteligencia.descomplix.com/" class="btn-link-mb">Ver projeto</a>
+        </div>
+
+        <div class="card">
+          <img src="https://wpsgames.com.br/img/concepthome.jpg" alt="">
+
+          <div class="card-description">
+            <h3>E-commerce</h3>
+
+            <div>
+              <h4><strong>Concept home</strong> <br>UI/UX - front/back</h4>
+              <a href="https://www.concepthomeinteriores.com/">Ver projeto <svg stroke="currentColor" fill="none"
+                  stroke-width="1.5" viewBox="0 0 15 15" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+                    fill="currentColor"></path>
+                </svg> </a>
+            </div>
+
+          </div>
+          <a href="https://www.concepthomeinteriores.com/" class="btn-link-mb">Ver projeto</a>
+        </div>
+
+
+        <div class="card">
+          <img src="https://wpsgames.com.br/img/site-sandro.jpg" alt="">
+
+          <div class="card-description">
+            <h3>Landing Page</h3>
+
+            <div>
+              <h4><strong>Dr. Sandro Hilário</strong> <br>UI/UX - frontend</h4>
+              <a href="https://sandrohilario.med.br/">Ver Projeto <svg stroke="currentColor" fill="none"
+                  stroke-width="1.5" viewBox="0 0 15 15" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+                    fill="currentColor"></path>
+                </svg> </a>
+            </div>
+
+          </div>
+          <a href="https://sandrohilario.med.br/" class="btn-link-mb">Ver projeto <svg stroke="currentColor" fill="none"
+              stroke-width="1.5" viewBox="0 0 15 15" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+                fill="currentColor"></path>
+            </svg> </a>
+        </div>
+
+        <div class="card">
+          <img src="img/profmanu.png" alt="">
+
+          <div class="card-description">
+            <h3>Website</h3>
+
+            <div>
+              <h4><strong>Prof. Manu</strong><br>UI/UX - front/back</h4>
+              <a href="https://profmanu.com/">Ver projeto <svg stroke="currentColor" fill="none" stroke-width="1.5"
+                  viewBox="0 0 15 15" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+                    fill="currentColor"></path>
+                </svg> </a>
+            </div>
+
+          </div>
+          <a href="https://profmanu.com/" class="btn-link-mb">Ver projeto</a>
+        </div>
+
+        <div class="card">
+          <img src="https://wpsgames.com.br/img/blog-cms.jpg" alt="">
+
+          <div class="card-description">
+            <h3>Blog NextJS</h3>
+
+            <div>
+              <h4><strong>Wagner Silva</strong> <br>UI/UX - front/back </h4>
+              <a href="https://blog-cms-hygraph.vercel.app/">Ver Projeto <svg stroke="currentColor" fill="none"
+                  stroke-width="1.5" viewBox="0 0 15 15" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+                    fill="currentColor"></path>
+                </svg> </a>
+            </div>
+
+          </div>
+          <a href="https://blog-cms-hygraph.vercel.app/" class="btn-link-mb">Ver projeto</a>
+        </div>
+
+        <div class="card">
+          <img src="img/levoapp.png" alt="">
+
+          <div class="card-description">
+            <h3>Site</h3>
+
+            <div>
+              <h4><strong>Levo App</strong> <br>Frontend </h4>
+              <a href="https://levoapp.com.br/">Ver Projeto <svg stroke="currentColor" fill="none" stroke-width="1.5"
+                  viewBox="0 0 15 15" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+                    fill="currentColor"></path>
+                </svg> </a>
+            </div>
+
+          </div>
+          <a href="https://levoapp.com.br/" class="btn-link-mb">Ver projeto</a>
+        </div>
+
+      </div>
+
+
+      <!-- <div class="s-resources__logos">
+        <div class="s-resources__logos-techs"><img src="img/icon-react.svg" alt="reacts"></div>
+        <div class="s-resources__logos-techs"><img src="img/icon-php.svg" alt="php"></div>
+        <div class="s-resources__logos-techs"><img src="img/icon-php.svg" alt=""></div>
+        <div class="s-resources__logos-techs"><img src="img/icon-php.svg" alt=""></div>
+        <div class="s-resources__logos-techs"><img src="img/icon-php.svg" alt=""></div>
+        <div class="s-resources__logos-techs"><img src="img/icon-php.svg" alt=""></div>
+        <div class="s-resources__logos-techs"><img src="img/icon-php.svg" alt=""></div>
+        <div class="s-resources__logos-techs"><img src="img/icon-php.svg" alt=""></div>
+        <div class="s-resources__logos-techs"><img src="img/icon-php.svg" alt=""></div>
+      </div> -->
+
+      <div class="marquee">
+        <ul class="marquee-content">
+          <li><i class="fab fa-github"></i></li>
+          <li><i class="fab fa-codepen"></i></li>
+          <li><i class="fab fa fa-cloud"></i></li>
+          <li><i class="fab fa-dev"></i></li>
+          <li><i class="fab fa-react"></i></li>
+          <li><i class="fab fa-vuejs"></i></li>
+          <li><i class="fab fa-angular"></i></li>
+          <li><i class="fab fa-node"></i></li>
+          <li><i class="fab fa-wordpress"></i></li>
+          <li><i class="fab fa-aws"></i></li>
+          <li><i class="fab fa-docker"></i></li>
+          <li><i class="fab fa-android"></i></li>
+          <li><i class="fab fa-css3"></i></li>
+          <li><i class="fab fa fa-html5"></i></li>
+          <li><i class="fab fa fa-code"></i></li>
+          <li><i class="fab fa-react"></i></li>
+        </ul>
+      </div>
+
+
+    </section>
+
+
+    <section class="s-contact" id="contato">
+
+      <div class="container">
+        <div class="col-1">
+
+          <div class="s-contact-image">
+            <img src="img/hero--.jpg" alt="imagem de uma mulher com cabelos vermelhos usando headseat" loading="lazy">
+            <!-- <img src="img/contact-sf.svg" alt="icone salesforce" class="img-1 levitating-element" loading="lazy">
+            <img src="img/contact-customer.svg" alt="customers" class="img-2 levitating-element2" loading="lazy">
+            <img src="img/contact-ok.svg" alt="conta criada" class="img-3 levitating-element" loading="lazy"> -->
+          </div>
+
+        </div>
+
+        <div class="col-2">
+          <h4 class="sub-title" data-i18n="contato">Contato</h4>
+          <h2 data-i18n="contact_title" class="s-contact-title">
+            Embarque nesta Jornada Épica com os Vikings Digitais!!</h2>
+          <p class="s-contact-description" data-i18n="contact_description"> Pronto para desbravar os mares digitais e
+            conquistar territórios online? Estamos aqui para forjar estratégias digitais robustas e projetos incríveis.
+            Entre em contato com os Vikings Digitais e prepare-se para uma aventura única na criação online!</p>
+
+          <form id="meuFormulario" action="formulario.php" method="POST" onsubmit="sendForm(); return false;">
+
+            <div class="d-flex">
+              <label> <span data-i18n="contact_name"> *Nome:</span>
+                <br>
+                <input type="text" name="name" Required>
+              </label>
+
+              <label for="phone"> <span data-i18n="contact_tel"> *Celular:</span>
+
+                <br>
+                <input data-i18n="contact_name" class="campo" class="phone" type="tel" id="celular" name="phone"
+                  required>
+              </label>
+            </div>
+
+            <div class="d-flex">
+              <label> <span data-i18n="contact_company"> Empresa:</span>
+                <br>
+                <input type="text" name="empresa" required>
+              </label>
+
+              <label> <span data-i18n="email"> *Email:</span>
+                <br>
+                <input type="email" name="email" required>
+              </label>
+            </div>
+
+            <label>
+              <br> <span data-i18n="contact_msg"> Mensagem:</span>
+
+              <textarea name="message" rows="5"></textarea>
+            </label>
+
+            <button type="submit" class="btn btn-primary"><span data-i18n="contact_send">Enviar</span> </button>
+
+          </form>
+          <br>
+          <div id="mensagem"></div>
+        </div>
+      </div>
+
+    </section>
+
+
+  </main>
+
+  <footer>
+    <div class="container">
+
+      <div class="d-flex">
+
+        <a href="#hero" class="logo" id="logo">
+          <!-- <img src="img/logo-branco.png" alt="logotipo" width="150" height="40"> -->
+          <p class="logotipo">Valhalla Digital </p>
+        </a>
+
+        <div>
+          <h4>links</h4>
+          <ul>
+            <li><a href="#quem-somos" data-i18n="quem_somos">Quem somos</a></li>
+            <li><a href="#atuacao" data-i18n="atuacao">Atuação</a></li>
+            <li><a href="#projetos" data-i18n="servicos">Projetos</a> </li>
+
+
+          </ul>
+        </div>
+
+
+        <div>
+          <h4 data-i18n=" contato">Contato</h4>
+          <ul>
+            <li>
+              <span>
+                <img src="img/icon-clock.svg" alt="icone relogio">
+              </span>
+
+              <span data-i18n="hour"> Segunda à sexta das 08:00h às 18:00h</span>
+
+            </li>
+            <li>
+              <span>
+                <img src="img/icon-mail.svg" alt="icone email">
+              </span>
+              <a href="mailto:contato@valhalladigital.com.br">contato@valhalladigital.com.br</a>
+
+            </li>
+            <!-- <li> <span>
+                <img src="img/icon-phone.svg" alt="icone telefone">
+              </span>
+              <a href="https://api.whatsapp.com/send?l=pt_BR&phone=551148163570">+55 11 4816-3570</a>
+
+            </li> -->
+            <!-- <li> <span>
+                <img src="img/icon-whats.svg" alt="icone whatsapp">
+              </span>
+              <a href="https://api.whatsapp.com/send?l=pt_BR&phone=5511969533781">+55 11 9 6953-3781</a>
+            </li> -->
+          </ul>
+        </div>
+
+        <!-- <div>
+          <h4 data-i18n="address">Endereço</h4>
+          <address>
+            <a href=""
+              target="_blank">
+              <span>
+                <img src="img/icon-address.svg" alt="">
+              </span>
+              <div>
+                <b> </b>
+                </br>
+
+              </div>
+
+            </a>
+
+          </address>
+          <address>
+
+            <a href=""
+              target="_blank">
+              <span>
+                <img src="img/icon-address.svg" alt="">
+              </span>
+              <div>
+                <b> São Paulo - SP</b>
+                </br>
+                
+              </div>
+            </a>
+
+
+          </address>
+        </div> -->
+
+
+      </div>
+
+    </div>
+    <div class="credits">
+      <a href="#hero" class="btn-top" aria-label="Botão para subir para o topo do site">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-arrow-narrow-up" width="24" height="24"
+          viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M12 5l0 14" />
+          <path d="M16 9l-4 -4" />
+          <path d="M8 9l4 -4" />
+        </svg></a>
+      <p class="d-center color-light">voltar ao topo</p>
+
+      <div class="container">
+        <span><b> © Valhalla Digital 2023.</b> All rights reserved. </span> <br>
+
+        <div>
+          <a href="https://api.whatsapp.com/send?l=pt_BR&amp;phone=5511999488027" target="_blank"
+            aria-label="whats da Valhalla Digital" style="margin-right: 15px;">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-brand-whatsapp" width="29"
+              height="29" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+              <path
+                d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+            </svg>
+          </a>
+
+
+          <a href="https://www.instagram.com/Valhalla Digital/" target="_blank"
+            aria-label="instagram da Valhalla Digital">
+            <svg aria-hidden="true" class="e-font-icon-svg" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                fill="#fff">
+              </path>
+            </svg></a>
+
+          <a href="https://www.linkedin.com/company/Valhalla Digital/mycompany/" target="_blank"
+            aria-label="linkedin da Valhalla Digital"> <svg aria-hidden="true" class="e-font-icon-svg"
+              viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                fill="#fff">
+              </path>
+            </svg></a>
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="./js/lib/swiper.min.js"></script>
+  <script src="./js/lib/aos.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/lib/micromodal.min.js"></script>
+  <script src="./js/lib/i18next.min.js"></script>
+  <script src="./js/resource.js"></script>
+  <script src="./js/lib/particules.min.js"></script>
+
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: "#ffffff" },
+        shape: {
+          type: "circle",
+          stroke: { width: 0, color: "#000000" },
+          polygon: { nb_sides: 5 },
+          image: { src: "img/github.svg", width: 100, height: 100 },
+        },
+        opacity: {
+          value: 0.4008530152163807,
+          random: false,
+          anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
+        },
+        size: {
+          value: 3,
+          random: true,
+          anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
+        },
+        line_linked: {
+          enable: false,
+          distance: 150,
+          color: "#ffffff",
+          opacity: 0.4,
+          width: 1,
+        },
+        move: {
+          enable: true,
+          speed: 3.206824121731046,
+          direction: "bottom-right",
+          random: false,
+          straight: false,
+          out_mode: "out",
+          bounce: false,
+          attract: { enable: false, rotateX: 600, rotateY: 1200 },
+        },
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" },
+          resize: true,
+        },
+        modes: {
+          grab: { distance: 400, line_linked: { opacity: 1 } },
+          bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
+          repulse: { distance: 200, duration: 0.4 },
+          push: { particles_nb: 4 },
+          remove: { particles_nb: 2 },
+        },
+      },
+      retina_detect: true,
+    });
+
+  </script>
+
+</body>
+
+</html>

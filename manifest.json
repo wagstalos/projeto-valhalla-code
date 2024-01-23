@@ -1,0 +1,60 @@
+{
+  "background_color": "#43bc6d",
+  "description": "Nossa equipe dispõe de um histórico robusto, com mais de 15 anos no setor de tecnologia e mais de 100 projetos entregues.",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "https://backlgrs.com.br/",
+  "orientation": "any",
+  "scope": "index.html",
+  "short_name": "Backlgrs",
+  "start_url": "index.html",
+  "theme_color": "#fff",
+  "categories": [],
+  "screenshots": [],
+  "icons": [
+    {
+      "src": "img/android/android-launchericon-512-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "img/android/android-launchericon-192-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "img/android/android-launchericon-144-144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "img/android/android-launchericon-96-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "img/android/android-launchericon-72-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "img/android/android-launchericon-48-48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Backlgrs",
+      "url": "",
+      "description": ""
+    }
+  ],
+  "lang": "pt"
+}

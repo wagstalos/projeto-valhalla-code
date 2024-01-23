@@ -1,0 +1,168 @@
+footer {
+    background-color: $black;
+    color: $black;
+    padding-top: 8rem;
+    font-size: 2rem;
+
+    font-size: 1.4rem;
+    line-height: 165%;
+    color: $gray-02;
+
+    border-top: 1px solid #272727;
+
+    z-index: 1;
+    position: relative;
+
+    .d-flex {
+        justify-content: space-between;
+
+        h4 {
+            margin-bottom: $gutter * 3;
+            color: $white;
+        }
+
+        a {
+            color: $gray-02;
+            margin: $gutter 0;
+            &:hover {
+                color: $purple;
+            }
+        }
+
+        address {
+            a {
+                display: flex;
+                align-items: center;
+                margin-bottom: $gutter * 3;
+            }
+            span {
+                margin-right: $gutter * 2;
+            }
+        }
+
+        ul {
+            li {
+                display: flex;
+                align-items: center;
+                span {
+                    margin-right: $gutter;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    .credits {
+        // border: 1px solid $gray;
+        border-top: 1px solid #272727;
+        padding: 3rem 0;
+        margin-top: $gutter * 8;
+        position: relative;
+        background: radial-gradient(circle at 50% 72%, #1e0022 0, #060606 55%);
+        background-color: #170027;
+
+        .btn-top {
+            position: absolute;
+            top: -18px;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            background-color: $purple;
+            color: $white;
+            border-radius: 80px;
+            width: 34px;
+            height: 34px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            -webkit-box-shadow: 2px 6px 10px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 6px 10px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            @include flex(row, center, space-between);
+        }
+
+        .e-font-icon-svg {
+            width: 24px;
+            color: $purple;
+            margin-right: $gutter * 2;
+        }
+    }
+
+    .btn-whats {
+        display: none;
+        position: fixed;
+        bottom: 25px;
+        right: 20px;
+        background-color: $purple;
+        padding: 16px 16px 10px 16px;
+        border-radius: 44px;
+        z-index: 10;
+        -webkit-box-shadow: 5px 1px 15px 2px rgba(0, 0, 0, 0.26);
+        box-shadow: 5px 1px 15px 2px rgba(0, 0, 0, 0.26);
+
+        &:hover {
+            .notification {
+                opacity: 0;
+            }
+        }
+    }
+
+    .notification {
+        background: red;
+        border-radius: 50%;
+        position: absolute;
+        right: -8px;
+        top: 0;
+        width: 22px;
+        -webkit-box-shadow: 0 0 0 0 #fb0000;
+        box-shadow: 0 0 0 0 #fb0000;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation: pulse 2s infinite;
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0% {
+            -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+            -webkit-box-shadow: 0 0 0 0 rgba(197, 0, 0, 0.7);
+            box-shadow: 0 0 0 0 rgba(197, 0, 0, 0.7);
+        }
+
+        70% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-box-shadow: 0 0 0 10px rgba(249, 1, 1, 0);
+            box-shadow: 0 0 0 10px rgba(249, 1, 1, 0);
+        }
+
+        100% {
+            -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+            -webkit-box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+        }
+    }
+
+    @include responsive($table-bk) {
+        .d-flex {
+            flex-direction: column;
+            h4 {
+                margin: ($gutter * 3) 0;
+            }
+        }
+    }
+
+    @include responsive($mobile-bk) {
+        .credits {
+            z-index: 11;
+            background-color: $gray-light;
+        }
+    }
+}

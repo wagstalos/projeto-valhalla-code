@@ -1,0 +1,317 @@
+* {
+    --swiper-navigation-size: 15px;
+}
+.d-flex {
+    display: flex;
+}
+
+.logotipo {
+    font-family: "Arkhip", sans-serif;
+    color: $white;
+    font-size: 3rem;
+    margin: 0 26px;
+}
+
+.d-center {
+    align-items: center;
+    text-align: center;
+}
+
+.s-between {
+    justify-content: space-between;
+}
+
+.color-light {
+    color: $white;
+}
+
+.color-green {
+    color: $main-color;
+}
+
+.mb-40 {
+    margin-bottom: 4rem;
+}
+
+.last-letter {
+    color: $main-color;
+}
+
+.icon {
+    width: 4.4rem;
+    height: 4.4rem;
+    background-color: rgba(197, 190, 220, 0.1);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.btn {
+    padding: 10px 35px;
+    cursor: pointer;
+}
+
+.btn-outline {
+    border: 1px solid $purple;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: $purple;
+        color: $white;
+    }
+}
+
+.btn-primary {
+    background-color: $purple;
+    color: $white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    transition: background-color 0.3s;
+    line-height: 5.4rem;
+    padding: 0px 5rem;
+
+    &:hover {
+        background-color: $blue;
+    }
+}
+
+.sub-title {
+    font-weight: bold;
+    font-size: 3.2rem;
+    line-height: 130%;
+    margin-bottom: 2rem;
+    color: $purple;
+    font-family: "Arkhip", sans-serif;
+}
+
+#mensagem {
+    color: $green;
+    font-size: 1.6rem;
+    padding: 8px;
+    border-radius: $border-radius * 2;
+    margin-top: $gutter * 2;
+    text-align: center;
+}
+
+#selectLanguage {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    z-index: 5;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background-color: transparent;
+    margin-left: 40px;
+
+    color: $gray-light-02;
+
+    option {
+        background-color: $gray-01;
+        color: $main-color;
+    }
+
+    @include responsive($table-bk) {
+        right: 70px;
+    }
+
+    @include responsive($mobile-bk) {
+        right: 60px;
+    }
+}
+
+/**************************\
+  Custom Swiper
+\**************************/
+
+// .mySwiper, .mySwiper3 {
+//     &:hover {
+//         cursor: url("../img/drag.svg"), auto;
+//     }
+// }
+
+.swiper-wrapper {
+    padding-bottom: 65px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    top: 90%;
+    background-color: transparent;
+    padding: 15px;
+    width: 10px;
+    border-radius: 50px;
+    color: $main-color;
+    border: 1px solid $main-color;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    left: auto;
+    right: 56%;
+}
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+    left: 56%;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+}
+
+.mySwiper2 {
+    .swiper-pagination {
+        bottom: 15px;
+    }
+}
+.swiper-button-prev:after {
+    margin-right: 2px;
+}
+
+.swiper-pagination-bullet {
+    background: $main-color;
+}
+
+.swiper-pagination-bullet-active {
+    width: 15px;
+    border-radius: 4px;
+}
+
+.swiper-pagination2 {
+    padding-bottom: 14px;
+}
+
+.swiper-pagination {
+    @include responsive($mobile-bk) {
+        text-align: start;
+    }
+}
+
+@include responsive($mobile-bk) {
+    .swiper-pagination {
+        text-align: start;
+    }
+
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+        left: auto;
+        right: 50px;
+    }
+
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+        left: auto;
+    }
+}
+
+/* CSS */
+.button-49,
+.button-49:after {
+    width: 300px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    background: linear-gradient(45deg, transparent 5%, $purple 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    box-shadow: 6px 0px 0px #00e6f6;
+    outline: transparent;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-bottom: 60px;
+}
+
+.button-49:after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+
+    content: "ALTERNATE TEXT";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, $purple 5%);
+    text-shadow:
+        -3px -3px 0px #f8f005,
+        3px 3px 0px #00e6f6;
+    clip-path: var(--slice-0);
+}
+
+.button-49:hover:after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+    0% {
+        clip-path: var(--slice-1);
+        transform: translate(-20px, -10px);
+    }
+    10% {
+        clip-path: var(--slice-3);
+        transform: translate(10px, 10px);
+    }
+    20% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 10px);
+    }
+    30% {
+        clip-path: var(--slice-3);
+        transform: translate(0px, 5px);
+    }
+    40% {
+        clip-path: var(--slice-2);
+        transform: translate(-5px, 0px);
+    }
+    50% {
+        clip-path: var(--slice-3);
+        transform: translate(5px, 0px);
+    }
+    60% {
+        clip-path: var(--slice-4);
+        transform: translate(5px, 10px);
+    }
+    70% {
+        clip-path: var(--slice-2);
+        transform: translate(-10px, 10px);
+    }
+    80% {
+        clip-path: var(--slice-5);
+        transform: translate(20px, -10px);
+    }
+    90% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 0px);
+    }
+    100% {
+        clip-path: var(--slice-1);
+        transform: translate(0);
+    }
+}
+
+@media (min-width: 768px) {
+    .button-49,
+    .button-49:after {
+        // width: 200px;
+        height: 46px;
+        line-height: 46px;
+    }
+}
