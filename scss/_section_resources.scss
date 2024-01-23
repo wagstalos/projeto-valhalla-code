@@ -155,10 +155,6 @@
             font-weight: 400;
         }
 
-        .btn-link-mb {
-            display: block;
-        }
-
         &__skills {
             @include flex(column, baseline, center);
 
@@ -175,12 +171,20 @@
                 width: 100%;
                 margin: 0;
                 margin-bottom: 4rem;
+
+                .btn-link-mb {
+                    display: block;
+                }
             }
 
             a {
                 display: none;
             }
         }
+    }
+
+    @include responsive($mobile-bk) {
+        padding: 10px;
     }
 }
 
@@ -225,9 +229,11 @@
     display: flex;
     animation: scrolling var(--marquee-animation-duration) linear infinite;
 }
-.marquee-content:hover {
-    animation-play-state: paused;
-}
+
+// .marquee-content:hover {
+//     animation-play-state: paused;
+// }
+
 @keyframes scrolling {
     0% {
         transform: translateX(0);
