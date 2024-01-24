@@ -1,12 +1,12 @@
 {
-  "background_color": "#43bc6d",
-  "description": "Nossa equipe dispõe de um histórico robusto, com mais de 15 anos no setor de tecnologia e mais de 100 projetos entregues.",
+  "background_color": "#6264eb ",
+  "description": "Com a força dos vikings transformando cliques em conquistas e transformando desejos em carruagens virtuais. A saga da sua presença online começa conosco.",
   "dir": "ltr",
   "display": "standalone",
-  "name": "https://backlgrs.com.br/",
+  "name": "https://www.valhalladigital.com.br/",
   "orientation": "any",
   "scope": "index.html",
-  "short_name": "Backlgrs",
+  "short_name": "Valhalla Digital",
   "start_url": "index.html",
   "theme_color": "#fff",
   "categories": [],
@@ -51,7 +51,7 @@
   ],
   "shortcuts": [
     {
-      "name": "Backlgrs",
+      "name": "Valhalla digital",
       "url": "",
       "description": ""
     }

@@ -1,89 +1,3 @@
-var swiper = new Swiper(".mySwiper", {
-  loop: false,
-  slidesPerView: 1.2,
-  spaceBetween: 10,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
-  breakpoints: {
-    600: {
-      slidesPerView: 1.2,
-      spaceBetween: 10,
-    },
-    900: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    1200: {
-      slidesPerView: 3,
-      spaceBetween: 40,
-    },
-  },
-});
-
-var swiper2 = new Swiper(".mySwiper2", {
-  spaceBetween: 20,
-  freeMode: false,
-  slidesPerView: 1.1,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    600: {
-      slidesPerView: 2,
-      spaceBetween: 10,
-    },
-    900: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    1200: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-  },
-});
-
-var swiper3 = new Swiper(".mySwiper3", {
-  slidesPerView: 1.2,
-  spaceBetween: 10,
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-
-  breakpoints: {
-    600: {
-      slidesPerView: 2.2,
-      spaceBetween: 10,
-    },
-    900: {
-      slidesPerView: 3.3,
-      spaceBetween: 30,
-    },
-  },
-});
 
 function scrollTarget() {
   var links = document.querySelectorAll('a[href^="#"]');
@@ -166,42 +80,12 @@ function sendForm() {
   xhr.send(dadosFormulario);
 }
 
-function changeImageTestimonial() {
-  var imagens = document.querySelectorAll(".s-carrer-img");
-  var indexAtual = 0;
-
-  function mostrarProximaImagem() {
-    imagens[indexAtual].classList.remove("active");
-    indexAtual = (indexAtual + 1) % imagens.length;
-    imagens[indexAtual].classList.add("active");
-  }
-
-  // Inicia o slideshow
-  setInterval(mostrarProximaImagem, 8000);
-}
-
-function hideShowWhats() {
-  var heroBtn = document.querySelector(".s-hero-text__btn-hero");
-  var whatsAppBtn = document.getElementById("whatsAppBtn");
-
-  window.addEventListener("scroll", function () {
-    var rect = heroBtn.getBoundingClientRect();
-
-    // Verifica se o botão s-hero-text__btn-hero está fora da tela
-    if (rect.bottom < 0 || rect.top > window.innerHeight) {
-      whatsAppBtn.style.display = "block";
-    } else {
-      whatsAppBtn.style.display = "none";
-    }
-  });
-}
 
 document.addEventListener("DOMContentLoaded", function () {
   AOS.init();
   scrollTarget();
   menuMobile();
-  resourcesModal();
-  hideShowWhats();
+
 });
 
 if ("serviceWorker" in navigator) {
