@@ -90,6 +90,7 @@
 
         .btn {
             margin-top: $gutter * 3;
+            -webkit-clip-path: polygon(10% 0, 80% 0%, 100% 0, 100% 55%, 90% 100%, 58% 100%, 0 100%, 0 50%);
         }
     }
 
