@@ -57,6 +57,7 @@
         .card {
             width: 30%;
             border: 1px solid #323131;
+
             padding: 20px;
             margin: 20px;
 
@@ -127,13 +128,17 @@
 
     @include responsive($table-bk) {
         &__description {
-            font-size: 1.8rem;
+            font-size: 2rem;
             max-width: 100%;
             font-weight: 400;
         }
 
         &__skills {
             @include flex(column, baseline, center);
+
+            h5 {
+                font-size: 2rem;
+            }
 
             li {
                 width: 100%;

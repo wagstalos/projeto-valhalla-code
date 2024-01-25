@@ -57,6 +57,30 @@
     border: 1px solid $purple;
     transition: background-color 0.3s;
 
+    background: rgba(255, 255, 255, 0.19);
+    // border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.6px);
+    -webkit-backdrop-filter: blur(4.6px);
+    // border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: $purple 0px 20px 30px -10px;
+    z-index: 1;
+
+    &::after {
+        content: "";
+        width: 80%;
+        height: 30px;
+        left: 18%;
+        top: 34%;
+        background-color: $purple;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.8;
+        filter: blur(9px);
+    }
+
+    font-weight: 500;
+
     &:hover {
         background-color: $purple;
         color: $white;
