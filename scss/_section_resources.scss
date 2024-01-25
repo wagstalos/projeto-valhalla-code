@@ -57,6 +57,7 @@
         .card {
             width: 30%;
             border: 1px solid #323131;
+
             padding: 20px;
             margin: 20px;
 
@@ -111,29 +112,54 @@
             }
 
             .btn-link-mb {
-                color: $white;
-                font-size: 1.8rem;
-                border: 1px solid $purple;
-                background-color: $purple;
-                max-width: 100%;
-                width: 100%;
+                // color: $white;
+                // font-size: 1.8rem;
+                // border: 1px solid $purple;
+                // background-color: $purple;
+                // max-width: 100%;
+                // width: 100%;
+                // display: none;
+                // text-align: center;
+                // padding: 10px;
+                // margin-top: 20px;
                 display: none;
+                margin-top: 2rem;
+                width: 100%;
+                line-height: 5.5rem;
+                list-style: none;
                 text-align: center;
-                padding: 10px;
-                margin-top: 20px;
+                background-color: $purple;
+                -webkit-transition: background-color 0.3s ease;
+                -o-transition: background-color 0.3s ease;
+                transition: background-color 0.3s ease;
+                font-weight: 700;
+                font-size: 1.8rem;
+                letter-spacing: -0.04em;
+                text-transform: uppercase;
+                color: $white;
+                -webkit-clip-path: polygon(7% 0, 80% 0%, 100% 0, 100% 55%, 93% 100%, 54% 100%, 0 100%, 0 46%);
+                /* clip-path: polygon(10% 0, 80% 0%, 100% 0, 100% 55%, 88% 100%, 20% 100%, 0 100%, 0 37%); */
+                position: relative;
+                svg {
+                    margin-left: $gutter/2;
+                }
             }
         }
     }
 
     @include responsive($table-bk) {
         &__description {
-            font-size: 1.8rem;
+            font-size: 2rem;
             max-width: 100%;
             font-weight: 400;
         }
 
         &__skills {
             @include flex(column, baseline, center);
+
+            h5 {
+                font-size: 2rem;
+            }
 
             li {
                 width: 100%;

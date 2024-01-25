@@ -3,7 +3,6 @@
     padding-top: 14.9rem;
     padding-bottom: 6.9rem;
     position: relative;
-    // background-color: $white;
     z-index: 1;
 
     &-title {
@@ -11,6 +10,10 @@
         font-size: 22px;
         color: $white;
         margin-bottom: 2rem;
+
+        span {
+            color: $blue-light;
+        }
     }
 
     &-description {
@@ -90,6 +93,9 @@
 
         .btn {
             margin-top: $gutter * 3;
+            display: flex;
+            align-items: center;
+            -webkit-clip-path: polygon(10% 0, 80% 0%, 100% 0, 100% 55%, 90% 100%, 58% 100%, 0 100%, 0 50%);
         }
     }
 
@@ -158,6 +164,8 @@
                 align-items: center;
                 justify-content: center;
                 margin-top: $gutter * 3;
+
+                -webkit-clip-path: polygon(6% 0, 80% 0%, 100% 0, 100% 55%, 94% 100%, 58% 100%, 0 100%, 0 50%);
             }
         }
     }

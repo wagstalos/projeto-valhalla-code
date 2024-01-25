@@ -35,8 +35,12 @@ html {
 p {
     font-size: 1.6rem;
     line-height: 165%;
-    color: $gray-02;
+    color: $gray-light;
     font-family: "Barlow", sans-serif;
+
+    @include responsive($table-bk) {
+        font-size: 1.8rem;
+    }
 }
 
 button {

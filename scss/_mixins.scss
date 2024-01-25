@@ -38,3 +38,9 @@
     color: $color;
     font-family: "Arkhip", sans-serif;
 }
+
+@mixin border-degrade() {
+    border-image: linear-gradient(#323131, $black) 30;
+    border-width: 1px;
+    border-style: solid;
+}
