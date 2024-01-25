@@ -3,7 +3,6 @@
     padding-top: 14.9rem;
     padding-bottom: 6.9rem;
     position: relative;
-    // background-color: $white;
     z-index: 1;
 
     &-title {
@@ -11,6 +10,10 @@
         font-size: 22px;
         color: $white;
         margin-bottom: 2rem;
+
+        span {
+            color: $blue-light;
+        }
     }
 
     &-description {
