@@ -25,10 +25,14 @@
         line-height: 110%;
         color: $white;
         margin-bottom: 2.4rem;
-        font-family: "Arkhip", sans-serif;
-        text-align: center;
 
+        text-align: center;
+        
         span {
+            font-family: "Arkhip", sans-serif;
+        }
+
+        .degrade {
             font-family: "Arkhip", sans-serif;
             background: linear-gradient(to right, #9c5af7, #81b9f1);
             -webkit-background-clip: text;
@@ -71,7 +75,8 @@
             font-size: 1.8rem;
             line-height: 150%;
             color: $white;
-            // max-width: 50rem;
+            max-width: 50rem;
+            margin: 0 auto;
             margin-bottom: $gutter * 6;
         }
 

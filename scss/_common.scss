@@ -124,8 +124,8 @@
 }
 
 #selectLanguage {
-    position: absolute;
-    top: 50%;
+    position: fixed;
+    // top: 50%;
     right: 10px;
     transform: translateY(-50%);
     z-index: 5;
@@ -134,11 +134,21 @@
     background-color: transparent;
     margin-left: 40px;
 
-    color: $gray-light-02;
+    font-family: $font-main;
+    color: $white;
+    border: 1px solid rgba(255, 255, 255, 0.19);
+    transition: background-color 0.3s;
+    background: rgba(255, 255, 255, 0.19);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.6px);
+    -webkit-backdrop-filter: blur(4.6px);
+    box-shadow: #6264eb 0px 20px 30px -10px;
+    z-index: 1;
+    font-weight: 500;
 
     option {
         background-color: $gray-01;
-        color: $main-color;
+        color: $white;
     }
 
     @include responsive($table-bk) {
@@ -146,7 +156,7 @@
     }
 
     @include responsive($mobile-bk) {
-        right: 60px;
+        right: 0;
     }
 }
 
