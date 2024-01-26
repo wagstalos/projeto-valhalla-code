@@ -114,6 +114,8 @@ header {
 
     @include responsive($mobile-bk) {
         // height: 100vh;
+        margin: 0;
+        width: 100%;
 
         .container {
             @include flex(row, center, center);

@@ -13,6 +13,10 @@ footer {
     z-index: 1;
     position: relative;
 
+    .footer_description{
+        max-width: 75%;
+    }
+
     .d-flex {
         justify-content: space-between;
 

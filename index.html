@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
   <link rel="stylesheet" href="./css/lib/swiper.min.css">
-  <link rel="stylesheet" href="./css/main.min.css?version=6" />
+  <link rel="stylesheet" href="./css/main.min.css?version=7" />
   <link rel="stylesheet" href="./css/lib/aos.min.css">
 
   <link rel="icon" href="./favicon.png" sizes="32x32">
@@ -21,7 +21,7 @@
 
   <title>Valhalla Digital</title>
   <meta name="title" content="Valhalla Digital ">
-  <meta name="description" content="" />
+  <meta name="description" content="Desbravamos o território digital" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
@@ -29,7 +29,7 @@
   <meta property="og:title" content="valhalladigital" />
   <meta name="description"
     content="Com a força dos vikings transformando cliques em conquistas e transformando desejos em carruagens virtuais. A saga da sua presença online começa conosco." />
-  <meta property="og:image" content="./img/preview.jpg" />
+  <meta property="og:image" content="/img/preview.png" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
@@ -37,7 +37,7 @@
   <meta property="twitter:title" content="valhalladigital" />
   <meta property="twitter:description"
     content="Com a força dos vikings transformando cliques em conquistas e transformando desejos em carruagens virtuais. A saga da sua presença online começa conosco." />
-  <meta property="twitter:image" content="./img/preview.jpg" />
+  <meta property="twitter:image" content="/img/preview.png" />
 
 
   <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
@@ -99,11 +99,15 @@
       <!-- <p class="logotipo-mb">Valhalla Digital </p> -->
     </div>
 
-    <!-- <select id="selectLanguage" aria-label="Language">
-      <option value="pt-br">BR</option>
-      <option value="en">EN</option>
-      <option value="es">ES</option>
-    </select> -->
+    <div class="d-flex">
+
+      <select id="selectLanguage" aria-label="Language">
+        <option value="pt-br">BR</option>
+        <option value="en">EN</option>
+        <!-- <option value="es">ES</option> -->
+      </select>
+
+    </div>
 
 
     <!-- mobile menu -->
@@ -188,32 +192,31 @@
 
             <h2>
               <!-- <img src="img/Fire.svg" alt="icon help" /> -->
-              <span>Bem-vindo à Valhalla Digital</span>
+              <span data-i18n="hero_subtitle">Bem-vindo à Valhalla Digital</span>
             </h2>
 
             <!-- <h3 style="color: aliceblue;"> Bem-vindo à</h3> -->
-            <h1 class="s-hero-title" data-aos="fade-right" data-aos-duration="1000" data-i18n="hero_title">
-              Desbravamos o <span>território digital</span> </h1>
+            <h1 class="s-hero-title" data-aos="fade-right" data-aos-duration="1000">
+              <span data-i18n="hero_title">Desbravamos o </span> <br>
+              <span data-i18n="hero_title_span" class="degrade">território digital</span>
+            </h1>
 
             <p class="s-hero-text__description" data-i18n="hero_description">
-              Com a força dos vikings transformando cliques em conquistas e
-              transformando desejos em carruagens virtuais. A saga da sua presença online começa conosco.
+              Com a força dos vikings transformando cliques em conquistas virtuais. A saga da sua presença online começa
+              conosco.
             </p>
 
-            <!-- <a href="https://api.whatsapp.com/send?l=pt_BR&phone=5511969533781" target="_blank" class="button-49">
-              <span data-i18n="hero_button">Comece um projeto</span>
-            </a> -->
             <a href="#contato">
-              <button class="button-49 color-light" role="button"> Comece um projeto</button>
+              <button class="button-49 color-light" role="button" data-i18n="hero_button"> Comece um projeto</button>
             </a>
-            <!-- <div class="s-hero-text__know">
-              <span data-i18n="hero_partners">Conheça nossos projetos:</span>
-            </div> -->
+
 
             <div class="s-hero-text__partners">
               <ul style="color: white; font-size: 18px;">
-                <li> <span>+10</span><br> Projetos
-                  SFCC</li>
+                <li> <span>+10</span><br>
+                  <p data-i18n="hero_sfcc">Projetos
+                    SFCC</p>
+                </li>
                 <li> <span>+30 </span> <br> Landing
                   pages</li>
                 <li> <span>+20</span> <br>
@@ -240,13 +243,13 @@
 
     <section class="s-about" id="quem-somos">
 
-      <h2 class="d-center">Quem somos</h2>
+      <h2 class="d-center" data-i18n="about_us">Quem somos</h2>
 
       <div class="container">
         <div class="s-about-text">
           <img src="img/icon-king.png" alt="" width="70px">
-          <h3>Somos uma equipe de jovens destemidos</h3>
-          <p>
+          <h3 data-i18n="about_vision">Somos uma equipe de jovens destemidos</h3>
+          <p data-i18n="about_description">
             Somos uma equipe de jovens cujas jornadas digitais se entrelaçaram em projetos ousados, tanto em terras
             brasileiras quanto além-mar. Cada membro carrega consigo a bagagem da exploração incansável dos caminhos do
             ciberespaço, esculpindo o panorama online com doses generosas de criatividade e inovação.
@@ -267,13 +270,13 @@
       </div>
 
 
-
     </section>
 
     <section class="s-resources" id="atuacao">
-      <h2 class="d-center">Atuação</h2>
+      <h2 class="d-center" data-i18n="resources_title">Atuação</h2>
 
-      <h3 class="s-resources__description">Seja para dar vida a uma nova marca, expandir sua <strong>presença
+      <h3 class="s-resources__description" data-i18n="resources_description">Seja para dar vida a uma nova marca,
+        expandir sua <strong>presença
           digital</strong> ou
         impulsionar suas <strong>vendas online</strong> , a
         Valhalla Digital está aqui para transformar suas aspirações em realidade.</h3>
@@ -282,51 +285,53 @@
       <ul class="s-resources__skills">
 
         <li>
-          <img src="img/iconsite.png" alt="" width="90px">
-          <h5>
+          <img src="img/iconsite.png" alt="icon lp" width="90px">
+          <h5 data-i18n="resources_lp">
             Landing Pages Persuasivas</h5>
-          <p>Transformamos visitantes em clientes com landing pages envolventes, destacando seus produtos ou serviços
+          <p data-i18n="resources_lp_description">Transformamos visitantes em clientes com landing pages envolventes,
+            destacando seus produtos ou serviços
             para capturar leads e incentivar ações.</p>
         </li>
 
         <li>
-          <img src="img/iconblog.png" alt="" width="70px">
-          <h5>
+          <img src="img/iconblog.png" alt="icone blog" width="70px">
+          <h5 data-i18n="resources_blog">
             Blogs Dinâmicos</h5>
-          <p>Conteúdo é crucial online. Criamos blogs que informam e engajam, com layouts intuitivos, design
+          <p data-i18n="resources_blog_description">Conteúdo é crucial online. Criamos blogs que informam e engajam, com
+            layouts intuitivos, design
             responsivo e SEO otimizado, tornando-se uma fonte confiável para seu público.</p>
         </li>
 
         <li>
           <img src="img/iconcart.png" alt="" width="70px">
-          <h5>
+          <h5 data-i18n="resources_commerce">
             E-commerces de Alto Desempenho</h5>
-          <p>Maximize suas vendas online com e-commerces visualmente atraentes e funcionais. De navegação fácil a
+          <p data-i18n="resources_commerce_description">Maximize suas vendas online com e-commerces visualmente
+            atraentes e funcionais. De navegação fácil a
             checkout seguro, nossas soluções são projetadas para uma experiência de compra sem atritos.</p>
         </li>
 
       </ul>
 
 
-
-
       <div class="d-center mb-40">
-        <h3 class="s-resources__projects-title" id="projetos">Projetos</h3>
-        <p class="color-light">Confira alguns dos nossos projetos!</p>
+        <h3 class="s-resources__projects-title" id="projetos" data-i18n="resources_projects">Projetos</h3>
+        <p class="color-light" data-i18n="resources_projects_description">Confira alguns dos nossos projetos!</p>
       </div>
 
 
       <div class="s-resources__projects">
         <div class="card">
-          <img src="https://wpsgames.com.br/img/capa-descomplix-inteligencia.jpg" alt="">
+          <img src="img/descomplix.webp" alt="Descomplix">
 
           <div class="card-description">
             <h3>Website</h3>
 
             <div>
               <h4><strong>DescompliX <br> UI/UX - frontend</strong></h4>
-              <a href="https://inteligencia.descomplix.com/">Ver projeto <svg stroke="currentColor" fill="none"
-                  stroke-width="1.5" viewBox="0 0 15 15" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <a href="https://inteligencia.descomplix.com/" target="_blank"> <span data-i18n="resources_seeprojects">Ver projeto</span>
+                <svg stroke="currentColor" fill="none" stroke-width="1.5" viewBox="0 0 15 15" height="1em" width="1em"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
                     fill="currentColor"></path>
@@ -335,9 +340,9 @@
 
           </div>
 
-          <a href="https://inteligencia.descomplix.com/" class="btn-link-mb">Ver projeto <svg stroke="currentColor"
-              fill="none" stroke-width="1.5" viewBox="0 0 15 15" height="1em" width="1em"
-              xmlns="http://www.w3.org/2000/svg">
+          <a href="https://inteligencia.descomplix.com/" class="btn-link-mb"  target="_blank"> <span
+              data-i18n="resources_seeprojects">Ver projeto</span> <svg stroke="currentColor" fill="none"
+              stroke-width="1.5" viewBox="0 0 15 15" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
                 fill="currentColor"></path>
@@ -345,15 +350,16 @@
         </div>
 
         <div class="card">
-          <img src="https://wpsgames.com.br/img/concepthome.jpg" alt="">
+          <img src="img/concepthome.jpg" alt="concepthome">
 
           <div class="card-description">
             <h3>E-commerce</h3>
 
             <div>
               <h4><strong>Concept home</strong> <br>UI/UX - front/back</h4>
-              <a href="https://www.concepthomeinteriores.com/">Ver projeto <svg stroke="currentColor" fill="none"
-                  stroke-width="1.5" viewBox="0 0 15 15" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <a href="https://www.concepthomeinteriores.com/" target="_blank"> <span data-i18n="resources_seeprojects">Ver
+                  projeto</span> <svg stroke="currentColor" fill="none" stroke-width="1.5" viewBox="0 0 15 15"
+                  height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
                     fill="currentColor"></path>
@@ -361,9 +367,9 @@
             </div>
 
           </div>
-          <a href="https://www.concepthomeinteriores.com/" class="btn-link-mb">Ver projeto<svg stroke="currentColor"
-              fill="none" stroke-width="1.5" viewBox="0 0 15 15" height="1em" width="1em"
-              xmlns="http://www.w3.org/2000/svg">
+          <a href="https://www.concepthomeinteriores.com/" class="btn-link-mb"  target="_blank"> <span
+              data-i18n="resources_seeprojects">Ver projeto</span><svg stroke="currentColor" fill="none"
+              stroke-width="1.5" viewBox="0 0 15 15" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
                 fill="currentColor"></path>
@@ -372,15 +378,16 @@
 
 
         <div class="card">
-          <img src="https://wpsgames.com.br/img/site-sandro.jpg" alt="">
+          <img src="img/drsandro.png" alt="imagem do site DR. sandro">
 
           <div class="card-description">
             <h3>Landing Page</h3>
 
             <div>
               <h4><strong>Dr. Sandro Hilário</strong> <br>UI/UX - frontend</h4>
-              <a href="https://sandrohilario.med.br/">Ver Projeto <svg stroke="currentColor" fill="none"
-                  stroke-width="1.5" viewBox="0 0 15 15" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <a href="https://sandrohilario.med.br/"  target="_blank"> <span data-i18n="resources_seeprojects">Ver projeto</span> <svg
+                  stroke="currentColor" fill="none" stroke-width="1.5" viewBox="0 0 15 15" height="1em" width="1em"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
                     fill="currentColor"></path>
@@ -388,8 +395,9 @@
             </div>
 
           </div>
-          <a href="https://sandrohilario.med.br/" class="btn-link-mb">Ver projeto <svg stroke="currentColor" fill="none"
-              stroke-width="1.5" viewBox="0 0 15 15" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+          <a href="https://sandrohilario.med.br/" class="btn-link-mb"  target="_blank"> <span data-i18n="resources_seeprojects">Ver
+              projeto</span> <svg stroke="currentColor" fill="none" stroke-width="1.5" viewBox="0 0 15 15" height="1em"
+              width="1em" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
                 fill="currentColor"></path>
@@ -404,8 +412,9 @@
 
             <div>
               <h4><strong>Prof. Manu</strong><br>UI/UX - front/back</h4>
-              <a href="https://profmanu.com/">Ver projeto <svg stroke="currentColor" fill="none" stroke-width="1.5"
-                  viewBox="0 0 15 15" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <a href="https://profmanu.com/"  target="_blank"> <span data-i18n="resources_seeprojects">Ver projeto</span> <svg
+                  stroke="currentColor" fill="none" stroke-width="1.5" viewBox="0 0 15 15" height="1em" width="1em"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
                     fill="currentColor"></path>
@@ -413,8 +422,9 @@
             </div>
 
           </div>
-          <a href="https://profmanu.com/" class="btn-link-mb">Ver projeto <svg stroke="currentColor" fill="none"
-              stroke-width="1.5" viewBox="0 0 15 15" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+          <a href="https://profmanu.com/" class="btn-link-mb"  target="_blank"> <span data-i18n="resources_seeprojects">Ver
+              projeto</span> <svg stroke="currentColor" fill="none" stroke-width="1.5" viewBox="0 0 15 15" height="1em"
+              width="1em" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
                 fill="currentColor"></path>
@@ -429,8 +439,9 @@
 
             <div>
               <h4><strong>Wagner Silva</strong> <br>UI/UX - front/back </h4>
-              <a href="https://blog-cms-hygraph.vercel.app/">Ver Projeto <svg stroke="currentColor" fill="none"
-                  stroke-width="1.5" viewBox="0 0 15 15" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <a href="https://blog-cms-hygraph.vercel.app/"  target="_blank"> <span data-i18n="resources_seeprojects">Ver projeto</span>
+                <svg stroke="currentColor" fill="none" stroke-width="1.5" viewBox="0 0 15 15" height="1em" width="1em"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
                     fill="currentColor"></path>
@@ -438,9 +449,9 @@
             </div>
 
           </div>
-          <a href="https://blog-cms-hygraph.vercel.app/" class="btn-link-mb">Ver projeto <svg stroke="currentColor"
-              fill="none" stroke-width="1.5" viewBox="0 0 15 15" height="1em" width="1em"
-              xmlns="http://www.w3.org/2000/svg">
+          <a href="https://blog-cms-hygraph.vercel.app/" class="btn-link-mb"  target="_blank"> <span
+              data-i18n="resources_seeprojects">Ver projeto</span> <svg stroke="currentColor" fill="none"
+              stroke-width="1.5" viewBox="0 0 15 15" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
                 fill="currentColor"></path>
@@ -455,8 +466,9 @@
 
             <div>
               <h4><strong>Levo App</strong> <br>Frontend </h4>
-              <a href="https://levoapp.com.br/">Ver Projeto <svg stroke="currentColor" fill="none" stroke-width="1.5"
-                  viewBox="0 0 15 15" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <a href="https://levoapp.com.br/"  target="_blank"> <span data-i18n="resources_seeprojects">Ver projeto</span> <svg
+                  stroke="currentColor" fill="none" stroke-width="1.5" viewBox="0 0 15 15" height="1em" width="1em"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
                     fill="currentColor"></path>
@@ -464,8 +476,9 @@
             </div>
 
           </div>
-          <a href="https://levoapp.com.br/" class="btn-link-mb">Ver projeto <svg stroke="currentColor" fill="none"
-              stroke-width="1.5" viewBox="0 0 15 15" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+          <a href="https://levoapp.com.br/" class="btn-link-mb"  target="_blank"> <span data-i18n="resources_seeprojects">Ver
+              projeto</span> <svg stroke="currentColor" fill="none" stroke-width="1.5" viewBox="0 0 15 15" height="1em"
+              width="1em" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
                 fill="currentColor"></path>
@@ -584,10 +597,11 @@
       <div class="d-flex">
 
         <a href="#hero" class="logo" id="logo">
-          <!-- <img src="img/logo-branco.png" alt="logotipo" width="150" height="40"> -->
+
           <p class="logotipo">Valhalla Digital </p>
 
-          <p>Com a força dos vikings transformando <br> cliques em conquistas.</p>
+          <p class="footer_description" data-i18n="footer_description">Com a força dos vikings transformando
+            cliques em conquistas.</p>
         </a>
 
         <div>
@@ -596,14 +610,12 @@
             <li><a href="#quem-somos" data-i18n="quem_somos">Quem somos</a></li>
             <li><a href="#atuacao" data-i18n="atuacao">Atuação</a></li>
             <li><a href="#projetos" data-i18n="servicos">Projetos</a> </li>
-
-
           </ul>
         </div>
 
 
         <div>
-          <h4 data-i18n=" contato">Contato</h4>
+          <h4 data-i18n="contato">Contato</h4>
           <ul>
             <li>
               <span>
@@ -730,8 +742,8 @@
   <script src="./js/lib/aos.min.js"></script>
   <script src="./js/main.js"></script>
   <!-- <script src="./js/lib/micromodal.min.js"></script> -->
-  <!-- <script src="./js/lib/i18next.min.js"></script> -->
-  <!-- <script src="./js/resource.js"></script> -->
+  <script src="./js/lib/i18next.min.js"></script>
+  <script src="./js/resource.js"></script>
   <script src="./js/lib/particules.min.js"></script>
 
 
