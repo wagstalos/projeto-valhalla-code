@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
           carreira: "Carreira",
           footer_description:
             "Com a força dos vikings transformando cliques em conquistas.",
+          back_to_top: "Voltar ao topo",
 
           hero_subtitle: "Bem-vindo à Valhalla Digital",
           hero_title: "Desbravamos o ",
@@ -75,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
           carreira: "Career",
           footer_description:
             "With the strength of the Vikings transforming clicks into achievements.",
+          back_to_top: "Back to the top",
 
           hero_subtitle: "Welcome to Valhalla Digital",
           hero_title: "We explore ",
@@ -97,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
           resources_description:
             "Whether you want to bring a new brand to life, expand your digital presence or boost your online sales, Valhalla Digital is here to turn your aspirations into reality.",
 
-          resources_lp_subtitle: "Persuasive Landing Pages",
+          resources_lp: "Persuasive Landing Pages",
           resources_lp_description:
             "We turn visitors into customers with engaging landing pages, highlighting your products or services to capture leads and encourage action.",
 
