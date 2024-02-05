@@ -167,7 +167,7 @@ function submitForm() {
     })
       .then((response) => {
         if (response.ok) {
-          status.innerHTML = "Thanks for your submission!";
+          status.innerHTML = "Obrigado por entrar em contato conosco!";
           form.reset();
         } else {
           response.json().then((data) => {
