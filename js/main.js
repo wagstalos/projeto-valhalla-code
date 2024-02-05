@@ -44,41 +44,6 @@ function menuMobile() {
   });
 }
 
-function resourcesModal() {
-  //modais
-  MicroModal.init();
-  for (let i = 1; i <= 7; i++) {
-    const button = document.getElementById(`open-modal-button-${i}`);
-    if (button) {
-      button.addEventListener("click", function () {
-        MicroModal.show(`modal-${i}`);
-      });
-    }
-  }
-}
-
-function sendForm() {
-  // Envie o formulário usando AJAX
-  var formulario = document.getElementById("meuFormulario");
-  var dadosFormulario = new FormData(formulario);
-
-  // Use AJAX para enviar dados para o arquivo PHP
-  var xhr = new XMLHttpRequest();
-  xhr.open("POST", "formulario.php", true);
-  xhr.onload = function () {
-    if (xhr.status == 200) {
-      var resposta = JSON.parse(xhr.responseText);
-      document.getElementById("mensagem").innerHTML = resposta.mensagem;
-
-      if (resposta.status === "enviado") {
-        // Limpar os campos do formulário se o email for enviado com sucesso
-        formulario.reset();
-      }
-    }
-  };
-  xhr.send(dadosFormulario);
-}
-
 function particules() {
   particlesJS("particles-js", {
     particles: {
@@ -167,7 +132,7 @@ function submitForm() {
     })
       .then((response) => {
         if (response.ok) {
-          status.innerHTML = "Thanks for your submission!";
+          status.innerHTML = "Obrigado por entrar em contato conosco!";
           form.reset();
         } else {
           response.json().then((data) => {

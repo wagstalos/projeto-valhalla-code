@@ -721,14 +721,6 @@
   <script src="./js/resource.js"></script>
   <script src="./js/lib/particules.min.js"></script>
 
-  <script>
-    function onClick(e) {
-      e.preventDefault();
-      grecaptcha.enterprise.ready(async () => {
-        const token = await grecaptcha.enterprise.execute('6LdakWcpAAAAALZYy0el8HH9z7LBWVvcBWXpNf3G', { action: 'LOGIN' });
-      });
-    }
-  </script>
 </body>
 
 </html>
