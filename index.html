@@ -323,7 +323,7 @@
 
 
       <div class="s-resources__projects">
-        <div class="card">
+        <div class="card js-tilt">
           <img src="img/descomplix.webp" alt="Descomplix">
 
           <div class="card-description">
@@ -352,7 +352,7 @@
             </svg></a>
         </div>
 
-        <div class="card">
+        <div class="card js-tilt">
           <img src="img/concepthome.jpg" alt="concepthome">
 
           <div class="card-description">
@@ -381,7 +381,7 @@
         </div>
 
 
-        <div class="card">
+        <div class="card js-tilt">
           <img src="img/drsandro.png" alt="imagem do site DR. sandro">
 
           <div class="card-description">
@@ -409,7 +409,7 @@
             </svg></a>
         </div>
 
-        <div class="card">
+        <div class="card js-tilt">
           <img src="img/profmanu.png" alt="">
 
           <div class="card-description">
@@ -437,7 +437,7 @@
             </svg></a>
         </div>
 
-        <div class="card">
+        <div class="card js-tilt">
           <img src="https://wpsgames.com.br/img/blog-cms.jpg" alt="">
 
           <div class="card-description">
@@ -465,7 +465,7 @@
             </svg></a>
         </div>
 
-        <div class="card">
+        <div class="card js-tilt">
           <img src="img/levoapp.png" alt="">
 
           <div class="card-description">
@@ -720,15 +720,9 @@
   <script src="./js/lib/i18next.min.js"></script>
   <script src="./js/resource.js"></script>
   <script src="./js/lib/particules.min.js"></script>
+  <script src="js/lib/jquery-3.4.1.min.js"></script>
+  <script src="js/lib/tilt.jquery.js"></script>
 
-  <script>
-    function onClick(e) {
-      e.preventDefault();
-      grecaptcha.enterprise.ready(async () => {
-        const token = await grecaptcha.enterprise.execute('6LdakWcpAAAAALZYy0el8HH9z7LBWVvcBWXpNf3G', { action: 'LOGIN' });
-      });
-    }
-  </script>
 </body>
 
 </html>

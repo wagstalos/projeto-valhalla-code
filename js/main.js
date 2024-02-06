@@ -189,6 +189,22 @@ function submitForm() {
   form.addEventListener("submit", handleSubmit);
 }
 
+function tiltAnimation() {
+  $(".js-tilt").tilt({
+    glare: true,
+    maxGlare: 1,
+    scale: 1,
+    maxTilt: 8,
+    perspective: 1000, // Transform perspective, the lower the more extreme the tilt gets.
+    easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
+    speed: 300, // Speed of the enter/exit transition.
+    transition: true, // Set a transition on enter/exit.
+    disableAxis: false, // What axis should be disabled. Can be X or Y.
+    reset: true, // If the tilt effect has to be reset on exit.
+    maxGlare: 1,
+  });
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   AOS.init();
   scrollTarget();
@@ -196,6 +212,7 @@ document.addEventListener("DOMContentLoaded", function () {
   particules();
   animationMarquee();
   submitForm();
+  tiltAnimation();
 });
 
 if ("serviceWorker" in navigator) {
