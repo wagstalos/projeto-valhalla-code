@@ -154,6 +154,28 @@ function submitForm() {
   form.addEventListener("submit", handleSubmit);
 }
 
+function sendForm() {
+  // Envie o formulário usando AJAX
+  var formulario = document.getElementById("meuFormulario");
+  var dadosFormulario = new FormData(formulario);
+
+  // Use AJAX para enviar dados para o arquivo PHP
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", "formulario.php", true);
+  xhr.onload = function () {
+    if (xhr.status == 200) {
+      var resposta = JSON.parse(xhr.responseText);
+      document.getElementById("mensagem").innerHTML = resposta.mensagem;
+
+      if (resposta.status === "enviado") {
+        // Limpar os campos do formulário se o email for enviado com sucesso
+        formulario.reset();
+      }
+    }
+  };
+  xhr.send(dadosFormulario);
+}
+
 function tiltAnimation() {
   $(".js-tilt").tilt({
     glare: true,
@@ -176,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
   menuMobile();
   particules();
   animationMarquee();
-  submitForm();
+  // submitForm();
   tiltAnimation();
 });
 

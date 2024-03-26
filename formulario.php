@@ -21,9 +21,9 @@ $resposta = array("status" => "enviado", "mensagem" => "Email enviado com sucess
 $resposta = array("status" => "erro", "mensagem" => "Erro ao enviar o email. Por favor, tente novamente.");
 }
 
-// // Retorna a resposta como JSON
-// echo json_encode($resposta);
-// }
+// Retorna a resposta como JSON
+echo json_encode($resposta);
+}
 
 
 ?>
